@@ -9,10 +9,13 @@ const parent= React.createElement(
     {id:"parent"},
     React.createElement("div",
         {id:"child"},
-        React.createElement("h1",
+        [React.createElement("h1",
             {id:"head"},
             "nesting hori h bhyi tagdi"
-        )))
+        ),React.createElement("h2",
+            {id:"head"},
+            "nesting hori h bhyi tagdi hmmm"
+        )]))
             
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
