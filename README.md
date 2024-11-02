@@ -1,2 +1,2 @@
 # React
-practicing react
+practicing react . <hr>
