@@ -1,9 +1,5 @@
-// const heading =React.createElement(
-//     "h1",
-//     {id:"heading"},
-//     "hello react"
-// );
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 const parent= React.createElement(
     "div",
     {id:"parent"},
@@ -18,6 +14,7 @@ const parent= React.createElement(
         )]))
             
 const root = ReactDOM.createRoot(document.getElementById("root"));
+//to make sibling create an array in third argument of createElement
 
 
 root.render(parent);
