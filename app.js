@@ -2,13 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-//React functional component
-const HeadingComponent = ()=>{
-    return <h1 className="heading">hey func comp</h1>;
+const HEA =()=>{
+    return <h2>yo yo yo slayed thru jsx</h2>
 };
-// same as upar wala func .
-const HeadingComponent2 = ()=> (<h1 className="heading">
-    hey func comp</h1>);
+
+//Component Composition
+const HeadingComponent = ()=>(
+    <div id="container">
+         <HEA/>
+         <h1 className="heading">hey func comp</h1>;
+    </div>
+);
 
 
 
