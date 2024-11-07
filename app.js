@@ -1,21 +1,50 @@
 import React from "react";
+
 import ReactDOM from "react-dom/client";
 
+const Header = ()=>{
+    return(<div className="header">
+        <div className="logo-container">
+            <img className="logo-container" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS93sZcYTfKGawuUNV3sF86AbPu5AWnVWu8ZQ&s"></img>
+        </div>
+        <div className="nav-items">
+             <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Cart</li>
+             </ul>
+        </div>
+ 
+    </div>)
+};
 
-const HEA =(
-     <h2>yo yo yo slayed thru jsx</h2>
-);
-const no = 1000;
-//Component Composition
-const HeadingComponent = ()=>(
-    <div id="container">
-         {HEA}
-         <h1 className="heading">{no}hey func comp</h1>
-    </div>
-);
+const RestaurantCard=()=>{
+    return(<div className="card">
+        <img className="res-logo" alt="res-food" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/l5sjr78yn3vhopcvqgfb"></img>
+        <h3>Meghana Foods </h3>
+    </div>)
+};
 
+const Body=()=>{
+    return(<div className="body">
+         
+        <div className="search">Search</div>
 
+        <div className="Cards-cont">
+            <RestaurantCard/>
+        </div>
+
+    </div>)
+};
+
+const AppLayout = ()=>{
+     return (<div className="app ">
+        <Header/>
+        <Body/>
+
+     </div>)
+ };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent/>);
- 
+root.render(<AppLayout/>);
