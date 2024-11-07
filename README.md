@@ -20,3 +20,4 @@ practicing react . <hr>
 - HTTPS
 - Tree Shaking - removes unused codes for us
 - Diff dev and prod bundles
+- Transpiling the code (Babel)
