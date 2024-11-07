@@ -1,6 +1,5 @@
 # React
-
-practicing react . <hr>
+Practicing React <hr>
 
 #parcel ⚡️
 
