@@ -24,8 +24,8 @@ const RestaurantCard=(props)=>{
         <img className="res-logo" alt="res-food" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/l5sjr78yn3vhopcvqgfb"></img>
         <h3>{props.resName}</h3>
         <h4>{props.cuisine}</h4>
-        <h4>4.4 stars</h4>
-        <h4>38 mins </h4>
+        <h4>{props.rating}</h4>
+        <h4>{props.time} </h4>
     </div>)
 };
 
@@ -35,8 +35,8 @@ const Body=()=>{
         <div className="search">Search</div>
 
         <div className="Cards-cont">
-            <RestaurantCard resName="Meghana foods" cuisine="indian, biryani , non-veg"/>
-            <RestaurantCard resName="KFC" cuisine="burger, Fries , non-veg"/>
+            <RestaurantCard resName="Meghana foods" cuisine="indian, biryani , non-veg" rating="4.3 stars" time="38 mins"/>
+            <RestaurantCard resName="KFC" cuisine="burger, Fries , non-veg" rating="4.1 stars" time="45 mins"/>
         </div>
 
     </div>)
@@ -52,3 +52,4 @@ const AppLayout = ()=>{
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout/>);
+
