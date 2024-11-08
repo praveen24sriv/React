@@ -24,8 +24,15 @@
 
 .card {
     width: 200px;
-    height: 300px;
+    height: 380px;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.card:hover {
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .search {
@@ -34,7 +41,12 @@
 
 }
 
-/* 
-.res-logo {
 
-} */
+.res-logo {
+    width: 100%;
+}
+
+.Cards-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
