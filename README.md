@@ -5,7 +5,7 @@ Practicing React <hr>
 
 - Dev build
 - local server
-- HMR
+- HMR(reloading and updating the website asa we save the file)
 - uses file watching algo
 - caching
 - image optimization
