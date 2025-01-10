@@ -1,5 +1,5 @@
 # React
-Practicing React <hr>
+Practicing React with namaste react <hr>
 
 #parcel ⚡️
 
