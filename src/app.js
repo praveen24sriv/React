@@ -943,11 +943,18 @@ const Body=()=>{
 
     </div>)
 };
+const Footer =()=>{
+  return <div className="footer">
+    <h3> hey this is the footer of our tomato website</h3>
+
+  </div>
+};
 
 const AppLayout = ()=>{
      return (<div className="app ">
         <Header/>
         <Body/> 
+        <Footer/>
 
      </div>)
  };
