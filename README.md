@@ -1,11 +1,11 @@
 # React
-Practicing React <hr>
+Practicing React with namaste react <hr>
 
 #parcel ⚡️
 
 - Dev build
 - local server
-- HMR
+- HMR(reloading and updating the website asa we save the file)
 - uses file watching algo
 - caching
 - image optimization
