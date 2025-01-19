@@ -28,3 +28,5 @@ Practicing React with namaste react <hr>
 
 - useState()
 - useEffect()
+  React keeps UI and Data layer in sync
+  Whenever a state variable changes , react re-renders its components.
