@@ -10,7 +10,7 @@ const RES_LIST=[
         "cuisines": [
           "Pizzas"
         ],
-        "avgRating": 4.3,
+        "avgRating": 3.9,
         "parentId": "721",
         "avgRatingString": "4.3",
         "totalRatingsString": "10K+",
@@ -114,7 +114,7 @@ const RES_LIST=[
           "Bakery",
           "Beverages"
         ],
-        "avgRating": 4.7,
+        "avgRating": 3.7,
         "parentId": "1040",
         "avgRatingString": "4.7",
         "totalRatingsString": "4.9K+",

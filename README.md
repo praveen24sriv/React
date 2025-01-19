@@ -21,3 +21,10 @@ Practicing React with namaste react <hr>
 - Tree Shaking - removes unused codes for us
 - Diff dev and prod bundles
 - Transpiling the code (Babel)
+
+# React Hooks
+
+(Normal JS utility functions)
+
+- useState()
+- useEffect()
