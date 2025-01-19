@@ -30,3 +30,24 @@ Practicing React with namaste react <hr>
 - useEffect()
   React keeps UI and Data layer in sync
   Whenever a state variable changes , react re-renders its components.
+
+# Reconciliation Algorithm ( React fiber )
+
+- The reconciliation algorithm is a core feature of React that updates the user interface (UI) efficiently
+- How it works
+
+- Render virtual DOM: When a component changes, React creates a new virtual DOM tree.
+- Diffing: React compares the new virtual DOM tree to the previous one to find differences.
+- Update strategy: React determines the most efficient way to update the actual DOM.
+- Update DOM: React updates the actual DOM to reflect the differences.
+- Ensure updated UI: React ensures that the user sees the updated UI
+
+# Virtual-DOM
+
+- A virtual DOM (VDOM) is a lightweight JavaScript representation of a webpage's Document Object Model (DOM).
+- it is a Object (js).
+
+# Diff Algo
+
+- it compares previous virtual DOM and updated virtual DOM
+- and then re renders.
