@@ -1,10 +1,20 @@
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useState , useEffect } from "react";
  
 
 const Body=()=>{
     const [ListOfRestaurants ,setListOfRestaurants] = useState(resList);
+    useEffect(()=>{
+        fetchdata();
+    },[]); 
+    const fetchdata = async()=>{
+        const data = await fetch("https://api.npoint.io/93bed93a99df4c91044e");
+        const json = await data.json();
+        console.log(json);
+        setListOfRestaurants(json.body.data);
+    }
+
 
     return(<div className="body">
             <div className="Filter">
