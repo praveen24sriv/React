@@ -60,10 +60,7 @@
 }
 
 .filter-btn {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+
     cursor: pointer;
 }
 
@@ -85,5 +82,14 @@
     margin: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.Filter {
+    display: flex;
+}
+
+.search-box {
+
     cursor: pointer;
 }

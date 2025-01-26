@@ -25,6 +25,12 @@ const Body=()=>{
 
     ):(<div className="body">
             <div className="Filter">
+            
+            <div className="search" >
+                <input type="text" className="search-box" placeholder="Search Restaurants" />
+                <button>Search</button> 
+            </div>
+
             <button className="filter-btn" onClick={()=>{
                 const filteredList = ListOfRestaurants.filter(
                     (res)=>res.info.avgRating > 4
