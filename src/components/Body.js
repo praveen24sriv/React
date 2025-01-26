@@ -33,8 +33,12 @@ const Body=()=>{
                     setSearchText(e.target.value);
                 }}/>
                 <button onClick={()=>{
-                    //Filter the list of restaurants
-                    console.log(SearchText);
+                    const Search = ListOfRestaurants.filter(
+                    (res)=>res.info.name.includes(SearchText)
+                );
+                console.log(Search);
+                setListOfRestaurants(Search);
+                
                 }}>Search</button> 
             </div>
 
