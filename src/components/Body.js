@@ -7,15 +7,17 @@ import Shimmer from "./Shimmer";
 
 const Body=()=>{
     const [ListOfRestaurants ,setListOfRestaurants] = useState(resList);
+    // const [FilteredRestaurants ,setFilteredRestaurants] = useState([]);
     const [SearchText, setSearchText] = useState("");
     // useEffect(()=>{
     //     fetchdata();
     // },[]); 
     // const fetchdata = async()=>{
-    //     const data = await fetch("https://api.npoint.io/93bed93a99df4c91044e");
+    //     const data = await fetch("https://www.google-analytics.com/j/collect?v=1&_v=j101&a=1730037449&t=pageview&_s=1&dl=https%3A%2F%2Fwww.swiggy.com%2F&ul=en-gb&de=UTF-8&dt=Order%20Food%20%26%20Groceries.%20Discover%20the%20best%20restaurants.%20Swiggy%20it!&sd=30-bit&sr=1440x900&vp=1600x390&je=0&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=160243765.1731004109&uid=0&tid=0&_gid=1026354939.1737838075&_slc=1&gtm=45He51n0n81MJV7Q8Qv78036788za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=102067555~102067808~102081485~102123608&z=1699555837");
     //     const json = await data.json();
     //     console.log(json);
     //     setListOfRestaurants(json.body.data);
+    //     setFilteredRestaurants(json.body.data);
     // }
 
  
