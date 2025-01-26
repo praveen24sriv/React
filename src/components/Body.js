@@ -16,12 +16,11 @@ const Body=()=>{
         console.log(json);
         setListOfRestaurants(json.body.data);
     }
-    if(ListOfRestaurants.length==0){
-        return Shimmer;
-    }
+
+ 
 
 
-    return(<div className="body">
+    return ListOfRestaurants.length==0?(<Shimmer/>):(<div className="body">
             <div className="Filter">
             <button className="filter-btn" onClick={()=>{
                 const filteredList = ListOfRestaurants.filter(

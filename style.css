@@ -66,3 +66,16 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.shimmer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    background-color: grey;
+
+}
