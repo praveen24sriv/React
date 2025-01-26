@@ -1,6 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useState , useEffect } from "react";
+import Shimmer from "./Shimmer";
+
  
 
 const Body=()=>{
@@ -13,6 +15,9 @@ const Body=()=>{
         const json = await data.json();
         console.log(json);
         setListOfRestaurants(json.body.data);
+    }
+    if(ListOfRestaurants.length==0){
+        return Shimmer;
     }
 
 
