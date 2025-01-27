@@ -26,10 +26,12 @@ Practicing React with namaste react <hr>
 
 (Normal JS utility functions)
 
-- useState()
+- useState() React keeps UI and Data layer in sync
+  - Whenever a state variable changes , react re-renders its components.
 - useEffect()
-  React keeps UI and Data layer in sync
-  Whenever a state variable changes , react re-renders its components.
+  - when no dependency array - useEffect will be called after every render.
+  - when dependency array is empty - useEffect will be called after initial render only(just once).
+  - dependency array is filled - [btnName] so useEffect will be called , everytime btnName is changed.
 
 # Reconciliation Algorithm ( React fiber )
 
