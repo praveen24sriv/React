@@ -53,3 +53,8 @@ Practicing React with namaste react <hr>
 
 - it compares previous virtual DOM and updated virtual DOM
 - and then re renders.
+
+# Routing in web apps
+
+- Client side routing(its a single page application , it loads other routes)
+- Server side routing(it send api req to server then data comes then page reloads)
