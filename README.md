@@ -67,3 +67,4 @@ Practicing React with namaste react <hr>
 - 4. Child Render is called
 - 5. Child ComponentDidMount is called
 - 6. Parent ComponentDidMount is called
+     ComponentDidMount (used for API calls).
