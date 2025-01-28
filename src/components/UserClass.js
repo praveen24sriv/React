@@ -9,10 +9,14 @@ constructor(props) {
     this.state={
         count:0,
     };
+    console.log("Child Constructor");
 
     }
-
+componentDidMount(){
+    console.log("Child Component Did Mount");
+}
 render() {
+    console.log("Child Render");
     const {count} = this.state;
     return <div className="user-card">
     <h1>Count ={count}</h1>
@@ -21,9 +25,8 @@ render() {
         ()=>{this.setState({
             count:count+1
         })}
-        
         }>Increment</button>
-
+        
     <h2>Name: {this.props.name}</h2>
     <h3> Location : Bangalore</h3>
     <h4> Contact : praveen24sriv</h4>

@@ -58,3 +58,12 @@ Practicing React with namaste react <hr>
 
 - Client side routing(its a single page application , it loads other routes)
 - Server side routing(it send api req to server then data comes then page reloads)
+
+# Lifecycle of Class Components
+
+- 1. Parent Constructor is called
+- 2. Parent Render is called
+- 3. Child Constructor is called
+- 4. Child Render is called
+- 5. Child ComponentDidMount is called
+- 6. Parent ComponentDidMount is called
