@@ -15,17 +15,29 @@ constructor(props) {
    console.log(this.props.name+"Child Constructor");
 
     }
+
+
+    
 async componentDidMount(){
     console.log(this.props.name+"Child Component Did Mount");
     const data = await fetch('https://api.github.com/users/praveen24sriv');
     const jsonData = await data.json();
     this.setState({userInfo:jsonData});
     console.log(jsonData);
-
 }
+
+
 componentDidUpdate(){
     console.log(this.props.name+"Child Component Did Update");
+
 }
+
+
+componentWillUnmount(){
+    console.log(this.props.name+"Child Component Will Unmount");
+}
+
+
 render() {
      console.log(this.props.name+"Child Render");
     const{name,location,avatar_url} = this.state.userInfo;
