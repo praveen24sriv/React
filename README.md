@@ -59,7 +59,7 @@ Practicing React with namaste react <hr>
 - Client side routing(its a single page application , it loads other routes)
 - Server side routing(it send api req to server then data comes then page reloads)
 
-# React Lifecycle Diagram.
+# Class components LIFECYCLE
 
 - 1. Parent Constructor is called
 - 2. Parent Render is called
@@ -82,3 +82,28 @@ Practicing React with namaste react <hr>
 - 8. Child2 ComponentDidMount is called
 - 9. Parent ComponentDidMount is called
      // React batches up the render phase of multiple childrens then goes in the DOM updating and ComponentDidMOunt process.(coz DOM manipulation is a expensive task)
+
+-
+
+-
+
+-
+
+-
+
+# REACT LIFECYCLE DIAGRAM
+
+- MOUNTING CYCLE
+
+- Constructor is called (dummy data)
+- Render is called(dummy data)
+  <<DOM UPDATED dummy data rendered>>
+- ComponentDidMount is called
+  <<API CALL>>
+  <<this.set.state>>
+
+- UPDATE CYCLE
+
+- render (API data)
+  <<DOM UPDATED api data rendered>>
+- ComponentDidUpdate

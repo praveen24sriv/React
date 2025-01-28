@@ -23,6 +23,9 @@ async componentDidMount(){
     console.log(jsonData);
 
 }
+componentDidUpdate(){
+    console.log(this.props.name+"Child Component Did Update");
+}
 render() {
     // console.log(this.props.name+"Child Render");
     const{name,location,avatar_url} = this.state.userInfo;
