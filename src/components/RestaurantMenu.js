@@ -20,7 +20,7 @@ const RestaurantMenu =()=>{
         setResInfo(data.data);
     }
 
-
+ 
     return (ResInfo === null)? (<Shimmer/>
 
     ):( 
