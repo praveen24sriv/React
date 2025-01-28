@@ -8,10 +8,8 @@ constructor(props) {
 
     this.state={
         userInfo:{
-            name:"Praveen Raj SRIV",
-            location:"Bangalore",
-           
-        
+            name:"Dummy",
+            location:"DUMMY",
         }  
     };
    // console.log(this.props.name+"Child Constructor");
