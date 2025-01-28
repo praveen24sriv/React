@@ -107,3 +107,7 @@ Practicing React with namaste react <hr>
 - render (API data)
   <<DOM UPDATED api data rendered>>
 - ComponentDidUpdate
+
+- UNMOUNTING CYCLE
+
+- ComponentWillUnmount will be called (when component is gone from that page).
