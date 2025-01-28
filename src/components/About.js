@@ -20,6 +20,7 @@ class About extends Component{
                 <p> This is a simple React app that uses React Router to navigate between pages. </p>
               
                 <UserClass name={"Praveen Raj SRIV"}/>
+                <UserClass name={"NIKHIL KAMATH"}/>
             </div>
         );
 

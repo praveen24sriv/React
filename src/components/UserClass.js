@@ -9,14 +9,14 @@ constructor(props) {
     this.state={
         count:0,
     };
-    console.log("Child Constructor");
+    console.log(this.props.name+"Child Constructor");
 
     }
 componentDidMount(){
-    console.log("Child Component Did Mount");
+    console.log(this.props.name+"Child Component Did Mount");
 }
 render() {
-    console.log("Child Render");
+    console.log(this.props.name+"Child Render");
     const {count} = this.state;
     return <div className="user-card">
     <h1>Count ={count}</h1>

@@ -68,3 +68,14 @@ Practicing React with namaste react <hr>
 - 5. Child ComponentDidMount is called
 - 6. Parent ComponentDidMount is called
      ComponentDidMount (used for API calls).
+
+- MULTIPLE CHILDS
+- 1. Parent Constructor is called
+- 2. Parent Render is called
+- 3. Child1 Constructor is called
+- 4. Child1 Render is called
+- 5. Child2 Constructor is called
+- 6. Child2 Render is called
+- 7. Child1 ComponentDidMount is called
+- 8. Child2 ComponentDidMount is called
+- 9. Parent ComponentDidMount is called
