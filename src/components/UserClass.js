@@ -7,28 +7,31 @@ constructor(props) {
     super(props);
 
     this.state={
-        count:0,
+        userInfo:{
+            name:"Praveen Raj SRIV",
+            location:"Bangalore",
+           
+        
+        }  
     };
-    console.log(this.props.name+"Child Constructor");
+   // console.log(this.props.name+"Child Constructor");
 
     }
-componentDidMount(){
-    console.log(this.props.name+"Child Component Did Mount");
+async componentDidMount(){
+    //console.log(this.props.name+"Child Component Did Mount");
+    const data = await fetch('https://api.github.com/users/praveen24sriv');
+    const jsonData = await data.json();
+    this.setState({userInfo:jsonData});
+    console.log(jsonData);
+
 }
 render() {
-    console.log(this.props.name+"Child Render");
-    const {count} = this.state;
+    // console.log(this.props.name+"Child Render");
+    const{name,location,avatar_url} = this.state.userInfo;
     return <div className="user-card">
-    <h1>Count ={count}</h1>
-
-     <button onClick={
-        ()=>{this.setState({
-            count:count+1
-        })}
-        }>Increment</button>
-        
-    <h2>Name: {this.props.name}</h2>
-    <h3> Location : Bangalore</h3>
+    <h2>Name: {name}</h2>
+    <h3> Location :{location}</h3>
+    <img src={avatar_url} alt="User Image"/>
     <h4> Contact : praveen24sriv</h4>
 
 
