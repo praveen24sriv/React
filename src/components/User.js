@@ -1,7 +1,7 @@
-const User =()=>{
+const User =(props)=>{
 
     return <div className="user-card">
-         <h2>Name: Praveen
+         <h2>Name: {props.name}
          </h2>
          <h3> Location : Bangalore
 
@@ -12,4 +12,4 @@ const User =()=>{
     </div>
 
 };
-export default User;
+export default User; 
