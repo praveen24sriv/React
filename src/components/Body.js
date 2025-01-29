@@ -23,14 +23,15 @@ const Body=()=>{
     // }
 
   
-    const isOnline = useOnlineStatus(); 
+    const onlineStatus = useOnlineStatus(); 
      
-    if (!isOnline) {
-        return <div className="body">
+    if (onlineStatus==false) {
+        console.log("You are offline");
+        return (<div>
             <h1>Looks like you are Offline</h1>
-            </div>
+            </div>);
     }
-
+ 
 
     return ListOfRestaurants.length==0?(
     <Shimmer/>
