@@ -118,3 +118,4 @@ Practicing React with namaste react <hr>
 - it is used to increase modularity on code
 - helping us to test our code better and increasing the efficiency
 - it is created normally as another js functio inside utils folder
+- to make our program follow SINGLE RESPONSIBILITY PRINCIPLE.
