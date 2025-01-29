@@ -119,3 +119,10 @@ Practicing React with namaste react <hr>
 - helping us to test our code better and increasing the efficiency
 - it is created normally as another js functio inside utils folder
 - to make our program follow SINGLE RESPONSIBILITY PRINCIPLE.
+
+# Optimization
+
+- we do chunking /code splitting / lazy loading for optimization our app
+- chunking means bundling in multiple files
+- we use this by named importing lazy and suspense modules from react.
+- and we just import those components with lazy method.
