@@ -112,3 +112,9 @@ Practicing React with namaste react <hr>
 
 - ComponentWillUnmount will be called (when component is gone from that page). It does clearInterval after unmounting.
 - ComponentDidUpdate does what when we need to render after some state variable changes , similar to dependency array in useEffect.
+
+# Custom Hooks
+
+- it is used to increase modularity on code
+- helping us to test our code better and increasing the efficiency
+- it is created normally as another js functio inside utils folder
