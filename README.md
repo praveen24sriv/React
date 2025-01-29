@@ -110,4 +110,5 @@ Practicing React with namaste react <hr>
 
 - UNMOUNTING CYCLE
 
-- ComponentWillUnmount will be called (when component is gone from that page).
+- ComponentWillUnmount will be called (when component is gone from that page). It does clearInterval after unmounting.
+- ComponentDidUpdate does what when we need to render after some state variable changes , similar to dependency array in useEffect.

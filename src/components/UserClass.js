@@ -17,13 +17,16 @@ constructor(props) {
     }
 
 
-    
+     
 async componentDidMount(){
     console.log(this.props.name+"Child Component Did Mount");
     const data = await fetch('https://api.github.com/users/praveen24sriv');
     const jsonData = await data.json();
     this.setState({userInfo:jsonData});
     console.log(jsonData);
+    this.timer=setInterval(()=>{
+        console.log("Interval");
+    },1000);
 }
 
 
@@ -35,6 +38,7 @@ componentDidUpdate(){
 
 componentWillUnmount(){
     console.log(this.props.name+"Child Component Will Unmount");
+    clearInterval(this.timer);
 }
 
 
