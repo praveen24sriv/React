@@ -2,7 +2,7 @@
 
 Practicing React with namaste react <hr>
 
-#parcel ⚡️
+# parcel ⚡️
 
 - Dev build
 - local server
