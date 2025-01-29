@@ -11,8 +11,8 @@ const useOnlineStatus = () => {
         }); 
     }, []);
 
-    return useOnlineStatus;
+    return onlineStatus;
 };
  
 export default useOnlineStatus;
- 
+  

@@ -7,6 +7,7 @@ const Header = ()=>{
     
     const [btnName, setBtn] = useState("Login"); 
     const onlineStatus = useOnlineStatus();
+    
 
     return(<div className="header">
         <div className="logo-container">
