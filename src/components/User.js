@@ -1,4 +1,16 @@
+import { useEffect } from "react";
+
 const User =(props)=>{
+
+    useEffect(()=>{
+        console.log(props.name+"Child Component Did Mount");
+
+        return ()=>{
+            console.log(props.name+"Child Component Will Unmount");
+        }
+    },[]);
+    
+
 
     return <div className="user-card">
          <h2>Name: {props.name}
