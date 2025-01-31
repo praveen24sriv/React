@@ -126,3 +126,18 @@ Practicing React with namaste react <hr>
 - chunking means bundling in multiple files
 - we use this by named importing lazy and suspense modules from react.
 - and we just import those components with lazy method.
+
+.
+
+.
+
+.
+
+.
+
+- native CSS
+- SCSS
+- inline CSS
+- Component libraries - materialUI , BaseUI , AntUI
+- Styled Components
+- Tailwind CSS Framework
