@@ -142,7 +142,11 @@ Practicing React with namaste react <hr>
 - Styled Components
   .
 - # Tailwind CSS Framework
+- (PROS)
 - css on the go (same file)
 - Reusability
 - less bundle size
 - Flexible UI(customizable)
+- (CONS)
+- not readable (big components)
+-
