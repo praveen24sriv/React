@@ -8,9 +8,9 @@ import useOnlineStatus from "../utils/useOnlineStatus";
  
 
 const Body=()=>{
-    const seachBtnCss ={
-        backgroundColor: "blue",
-    }
+    // const seachBtnCss ={
+    //     backgroundColor: "blue",
+    // }
     const [ListOfRestaurants ,setListOfRestaurants] = useState(resList);
     // const [FilteredRestaurants ,setFilteredRestaurants] = useState([]);
     const [SearchText, setSearchText] = useState("");
@@ -47,7 +47,8 @@ const Body=()=>{
                 onChange={(e)=>{
                     setSearchText(e.target.value);
                 }}/>
-                <button style= {seachBtnCss} onClick={()=>{
+                <button style= {{ backgroundColor:"blue"}} 
+                    onClick={()=>{
                     const Search = ListOfRestaurants.filter(
                     (res)=>res.info.name.toLowerCase().includes(SearchText.toLowerCase())  
                 );
