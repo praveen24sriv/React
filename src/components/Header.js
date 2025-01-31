@@ -9,7 +9,7 @@ const Header = ()=>{
     const onlineStatus = useOnlineStatus();
     
 
-    return(<div className="header">
+    return(<div className=" flex ">
         <div className="logo-container">
             <img className="logo-container" src={LOGO_URL}></img>
         </div>
