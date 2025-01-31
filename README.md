@@ -140,4 +140,9 @@ Practicing React with namaste react <hr>
 - inline CSS
 - Component libraries - materialUI , BaseUI , AntUI
 - Styled Components
-- Tailwind CSS Framework
+  .
+- # Tailwind CSS Framework
+- css on the go (same file)
+- Reusability
+- less bundle size
+- Flexible UI(customizable)
