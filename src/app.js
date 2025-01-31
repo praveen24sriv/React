@@ -41,7 +41,7 @@ const AppLayout = ()=>{
       },
       {
         path:"/grocery",
-        element:<Suspense fallback={<h3>gross loading</h3>} >
+        element:<Suspense fallback ={<h1>hi</h1>} >
           <Grocery/>
           </Suspense >
       },
