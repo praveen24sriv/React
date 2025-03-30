@@ -83,14 +83,6 @@ Practicing React with namaste react <hr>
 - 9. Parent ComponentDidMount is called
      // React batches up the render phase of multiple childrens then goes in the DOM updating and ComponentDidMOunt process.(coz DOM manipulation is a expensive task)
 
--
-
--
-
--
-
--
-
 # REACT LIFECYCLE DIAGRAM
 
 - MOUNTING CYCLE
@@ -126,15 +118,7 @@ Practicing React with namaste react <hr>
 - chunking means bundling in multiple files
 - we use this by named importing lazy and suspense modules from react.
 - and we just import those components with lazy method.
-
-.
-
-.
-
-.
-
-.
-
+  .
 - native CSS
 - SCSS
 - inline CSS
@@ -149,4 +133,7 @@ Practicing React with namaste react <hr>
 - Flexible UI(customizable)
 - (CONS)
 - not readable (big components)
--
+
+# props drilling :
+
+passing data (props) from a parent component down through multiple levels of nested components, even when intermediate components don't directly use that data, to reach a deeply nested child.
