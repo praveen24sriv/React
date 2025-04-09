@@ -137,3 +137,7 @@ Practicing React with namaste react <hr>
 # props drilling :
 
 passing data (props) from a parent component down through multiple levels of nested components, even when intermediate components don't directly use that data, to reach a deeply nested child.
+
+# React Context
+
+React Context is a way to share state or data across multiple components in a React application without having to pass props down manually at every level of the component tree.

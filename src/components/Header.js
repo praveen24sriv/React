@@ -26,7 +26,7 @@ const Header = ()=>{
                 <button className="login-btn" onClick={()=>{
                     btnName=="Login"?setBtn("Logout"):setBtn("Login");
                 }}>{btnName}
-                 <span className="text-red-600 p-10 ">{user.name}</span></button>
+                 <span className="text-red-600 p-10 font-bold ">{user.name}</span></button>
              </ul>
         </div>
  
