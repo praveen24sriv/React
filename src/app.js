@@ -9,6 +9,7 @@ import About from "./components/About";
 // import Grocery from "./components/Grocery";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter ,RouterProvider,Outlet } from "react-router-dom";
+import UserContext from "./utils/UserContext";
  
 
 const Grocery = lazy(()=>import("./components/Grocery"));
@@ -16,10 +17,24 @@ const Grocery = lazy(()=>import("./components/Grocery"));
  
 
 const AppLayout = ()=>{
+     const [user,setUser] = React.useState({
+      name:"Praveen ",
+      email:"praveen@gmail",});
+
+
      return (<div className="app ">
+        <UserContext.Provider
+        value={
+          {
+            user:user,}
+            }
+        >
         <Header/>
         <Outlet/> 
         <Footer/>
+  
+        </UserContext.Provider>
+       
 
      </div>)
  };
