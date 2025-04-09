@@ -1,7 +1,8 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState,useContext } from "react";
+import { useState , useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus  from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = ()=>{
     
@@ -24,7 +25,8 @@ const Header = ()=>{
                 <li className="px-2">Cart</li>
                 <button className="login-btn" onClick={()=>{
                     btnName=="Login"?setBtn("Logout"):setBtn("Login");
-                }}>{btnName} {user.name}</button>
+                }}>{btnName}
+                 <span className="text-red-600 p-10 ">{user.name}</span></button>
              </ul>
         </div>
  
