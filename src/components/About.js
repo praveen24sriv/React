@@ -1,6 +1,7 @@
 import UserClass from './UserClass';
 // import React from 'react';
-import {Component} from 'react';
+import {Component,useContext} from 'react';
+import UserContext from '../utils/UserContext';
 
 //class About extends React.Component
 class About extends Component{
@@ -17,6 +18,10 @@ class About extends Component{
         return (
             <div className="about">
                 <h1>About</h1>
+                <UserContext.Consumer>
+                    {({user})=><h1>{user.name}</h1>
+                    }
+                </UserContext.Consumer>
                 <p> This is a simple React app that uses React Router to navigate between pages. </p>
               
                 <UserClass name={"Praveen Raj SRIV"}/>
