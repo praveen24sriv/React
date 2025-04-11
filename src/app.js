@@ -10,7 +10,8 @@ import About from "./components/About";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter ,RouterProvider,Outlet } from "react-router-dom";
 import UserContext from "./utils/UserContext";
- 
+import {Provider} from "react-redux";
+import store from "./utils/store";
 
 const Grocery = lazy(()=>import("./components/Grocery"));
 
@@ -23,6 +24,7 @@ const AppLayout = ()=>{
 
 
      return (<div className="app ">
+      <Provider store={store}>
         <UserContext.Provider
         value={
           {
@@ -35,7 +37,7 @@ const AppLayout = ()=>{
   
         </UserContext.Provider>
        
-
+        </Provider>
      </div>)
  };
  const appRouter = createBrowserRouter([
