@@ -21,7 +21,7 @@ const AppLayout = ()=>{
      const [user,setUser] = React.useState({
       name:"Praveen ",
       email:"praveen@gmail",});
-
+ 
 
      return (<div className="app ">
       <Provider store={store}>
