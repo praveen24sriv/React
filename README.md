@@ -141,3 +141,18 @@ passing data (props) from a parent component down through multiple levels of nes
 # React Context
 
 React Context is a way to share state or data across multiple components in a React application without having to pass props down manually at every level of the component tree.
+
+# Redux
+
+Redux is a state management library for JavaScript apps, commonly used with React. It helps manage and centralize application state in a predictable way.
+
+# Redux Toolkit
+
+Redux Toolkit (RTK) is the official, recommended way to write Redux logic.
+It removes a lot of boilerplate code and simplifies common patterns.
+
+Think of it as Redux but faster, cleaner, and more developer-friendly.
+
+-When u click on a button it dispatches an ACTION which calls REDUCER function which updates the SLICE of redux STORE (write to store)
+
+-SELECTOR subscribes to the store and gets the data from store (read from store )
