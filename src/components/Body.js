@@ -4,10 +4,19 @@ import { useState , useEffect } from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartslice";
 
  
 
 const Body=()=>{
+
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = () => {
+        dispatch(addItem("grapes"));
+    }
     // const seachBtnCss ={
     //     backgroundColor: "blue",
     // }
@@ -75,6 +84,13 @@ const Body=()=>{
             to={"/restaurant/"+resto.info.id}>
                 <RestaurantCard  resData={resto}/>
                 </Link> )}
+
+        </div>
+        <div>
+            <button className="bg-green-200 text-black font-bold py-1 px-2 rounded-lg"
+            onClick={()=>handleAddItem()}>
+                Add to Cart
+            </button>
         </div>
 
     </div>)
