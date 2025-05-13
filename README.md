@@ -156,3 +156,7 @@ Think of it as Redux but faster, cleaner, and more developer-friendly.
 -When u click on a button it dispatches an ACTION which calls REDUCER function which updates the SLICE of redux STORE (write to store)
 
 -SELECTOR subscribes to the store and gets the data from store (read from store )
+
+# jest -
+
+Jest is a JavaScript testing framework that is often used for testing React applications,

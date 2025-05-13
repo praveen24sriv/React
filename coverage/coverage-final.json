@@ -1,1 +1,2 @@
-{}
+{"/Users/praveenrajsrivastav/Desktop/React/React/src/components/sum.js": {"path":"/Users/praveenrajsrivastav/Desktop/React/React/src/components/sum.js","statementMap":{"0":{"start":{"line":1,"column":20},"end":{"line":1,"column":35}},"1":{"start":{"line":1,"column":30},"end":{"line":1,"column":35}}},"fnMap":{"0":{"name":"(anonymous_0)","decl":{"start":{"line":1,"column":20},"end":{"line":1,"column":21}},"loc":{"start":{"line":1,"column":30},"end":{"line":1,"column":35}},"line":1}},"branchMap":{},"s":{"0":1,"1":1},"f":{"0":1},"b":{},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"8bd5aedcf9de77892b2c0760cb8f944e65df0616"}
+}
